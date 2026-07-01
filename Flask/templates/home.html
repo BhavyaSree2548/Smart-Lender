@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Lender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="home-body">
+    <nav class="navbar">
+        <h2>Smart Lender</h2>
+        <div>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('predict_page') }}">Predict</a>
+            
+        </div>
+    </nav>
+
+    <main class="hero">
+        <section class="hero-text">
+            <p class="tagline">Applicant Creditworthiness Prediction</p>
+            <h1>Loan Approval Prediction</h1>
+            <p>
+                Smart Lender is a machine learning based web application that
+                predicts whether a loan application should be approved based on
+                applicant income, credit history, employment status, loan amount,
+                education and property area.
+            </p>
+            <a class="btn" href="{{ url_for('predict_page') }}">Predict Loan Status</a>
+        </section>
+    </main>
+
+    <section class="content-section">
+        <h2>Project Conclusion</h2>
+        <p>
+            The Smart Lender project demonstrates how machine learning can automate
+            and improve the loan approval process. It reduces manual verification
+            time, supports data-driven decisions, minimizes human bias and helps
+            financial institutions identify low-risk and high-risk applicants.
+        </p>
+    </section>
+</body>
+</html>

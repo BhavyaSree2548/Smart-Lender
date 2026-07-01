@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Loan Approval Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body class="result-body">
+
+    <nav class="navbar">
+
+        <h2>Smart Lender</h2>
+
+        <div>
+
+            <a href="{{ url_for('home') }}">Home</a>
+
+            <a href="{{ url_for('predict_page') }}">Predict</a>
+
+            
+
+        </div>
+
+    </nav>
+
+
+
+    <main class="result-card">
+
+        <h1>Loan Approval Prediction</h1>
+
+        <div class="coin-image">BANK</div>
+
+        <h2 class="{{ 'approved' if prediction == 1 else 'rejected' }}">{{ result }}</h2>
+
+        <a class="btn" href="{{ url_for('predict_page') }}">Predict Again</a>
+
+    </main>
+
+</body>
+
+</html>
