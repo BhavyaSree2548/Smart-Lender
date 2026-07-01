@@ -2,6 +2,12 @@
 
 Smart Lender is a machine learning powered Flask web application that predicts whether a loan application is likely to be approved. The project trains and compares Decision Tree, Random Forest, K-Nearest Neighbors and XGBoost classifiers, then saves the best performing model for Flask integration.
 
+## 🌐 Live Demo
+https://smart-lender-85ey.onrender.com/
+
+## 💻 GitHub Repository
+https://github.com/BhavyaSree2548/Smart-Lender
+
 ## Project Folders
 
 - `Dataset/loan_prediction.csv` - training dataset
